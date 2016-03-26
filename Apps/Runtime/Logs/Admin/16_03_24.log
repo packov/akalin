@@ -1,0 +1,27 @@
+[ 2016-03-24T21:24:03+08:00 ] ::1 /myblog/index.php/admin/welcome.html
+ERR: 无法加载控制器:Welcome
+
+[ 2016-03-24T21:24:07+08:00 ] ::1 /myblog/index.php/admin/Index/welcome.html
+ERR: 非法操作:welcome
+
+[ 2016-03-24T21:24:12+08:00 ] ::1 /myblog/index.php/admin/Index/echo
+ERR: 非法操作:echo
+
+[ 2016-03-24T21:24:18+08:00 ] ::1 /myblog/index.php/admin/Index/welcome.html
+ERR: 非法操作:welcome
+
+[ 2016-03-24T21:24:30+08:00 ] ::1 /myblog/index.php/admin/Index/article-list.html
+ERR: 非法操作:article-list
+
+[ 2016-03-24T21:24:32+08:00 ] ::1 /myblog/index.php/admin/Index/picture-list.html
+ERR: 非法操作:picture-list
+
+[ 2016-03-24T21:24:37+08:00 ] ::1 /myblog/index.php/admin/Index/article-list.html
+ERR: 非法操作:article-list
+
+[ 2016-03-24T22:07:04+08:00 ] ::1 /myblog/index.php/admin/Index/feedback-list.html
+ERR: 非法操作:feedback-list
+
+[ 2016-03-24T22:07:07+08:00 ] ::1 /myblog/index.php/admin/Index/product-brand.html
+ERR: 非法操作:product-brand
+
