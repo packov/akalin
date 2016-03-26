@@ -10,7 +10,7 @@ class BaseController extends Controller {
         }
         //获取导航菜单
         function getMenus(){
-            //菜单导航
+            //top菜单导航
             $cates = D('Catalogue')->select();
             $this->assign('cate', $cates);
         }

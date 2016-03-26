@@ -4,8 +4,7 @@ use Think\Controller;
 
 class IndexController extends BaseController{
     public function index(){
-       // debug(get_defined_constants());
-       // debug() ;
+//        debug(get_defined_constants());
 		$this->display();
     }
 }

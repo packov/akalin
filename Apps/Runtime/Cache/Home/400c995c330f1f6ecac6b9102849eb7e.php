@@ -7,22 +7,22 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="/myblog/Public/lib/html5.js"></script>
-    <script type="text/javascript" src="/myblog/Public/lib/respond.min.js"></script>
-    <script type="text/javascript" src="/myblog/Public/lib/PIE_IE678.js"></script>
+    <script type="text/javascript" src="/akalin/Public/lib/html5.js"></script>
+    <script type="text/javascript" src="/akalin/Public/lib/respond.min.js"></script>
+    <script type="text/javascript" src="/akalin/Public/lib/PIE_IE678.js"></script>
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="/myblog/Public/static/h-ui/css/H-ui.min.css" />
-    <link rel="stylesheet" type="text/css" href="/myblog/Public/lib/Hui-iconfont/1.0.7/iconfont.css" />
-    <link rel="stylesheet" type="text/css" href="/myblog/Public/lib/icheck/icheck.css" />
-    <!--<link rel="stylesheet" type="text/css" href="/myblog/Public/static/h-ui/skin/default/skin.css" id="skin" />-->
+    <link rel="stylesheet" type="text/css" href="/akalin/Public/static/h-ui/css/H-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="/akalin/Public/lib/Hui-iconfont/1.0.7/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="/akalin/Public/lib/icheck/icheck.css" />
+    <!--<link rel="stylesheet" type="text/css" href="/akalin/Public/static/h-ui/skin/default/skin.css" id="skin" />-->
 
-    <link rel="stylesheet" type="text/css" href="/myblog/Public/static/h-ui/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/akalin/Public/static/h-ui/css/style.css" />
     <!--[if IE 6]>
-    <script type="text/javascript" src="/myblog/Public/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+    <script type="text/javascript" src="/akalin/Public/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
     <script>DD_belatedPNG.fix('*');</script>
     <![endif]-->
 
-    <title>星哥的博客</title>
+    <title>阿卡林-星哥的博客</title>
     <meta name="keywords" content="PHP,Apache,Nginx,MySql,Redis">
     <meta name="description" content="专注PHP技术分享">
 </head>
@@ -99,15 +99,15 @@
     </div>
 </footer>
 
-<script type="text/javascript" src="/myblog/Public/lib/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="/myblog/Public/lib/layer/2.1/layer.js"></script>
-<script type="text/javascript" src="/myblog/Public/lib/laypage/1.2/laypage.js"></script>
-<script type="text/javascript" src="/myblog/Public/lib/My97DatePicker/WdatePicker.js"></script>
-<script type="text/javascript" src="/myblog/Public/lib/icheck/jquery.icheck.min.js"></script>
-<script type="text/javascript" src="/myblog/Public/lib/bootstrap-Switch/bootstrapSwitch.js"></script>
-<script type="text/javascript" src="/myblog/Public/lib/Validform/5.3.2/Validform.min.js"></script>
-<script type="text/javascript" src="/myblog/Public/lib/Validform/5.3.2/passwordStrength-min.js"></script>
-<script type="text/javascript" src="/myblog/Public/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/akalin/Public/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/akalin/Public/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/akalin/Public/lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript" src="/akalin/Public/lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="/akalin/Public/lib/icheck/jquery.icheck.min.js"></script>
+<script type="text/javascript" src="/akalin/Public/lib/bootstrap-Switch/bootstrapSwitch.js"></script>
+<script type="text/javascript" src="/akalin/Public/lib/Validform/5.3.2/Validform.min.js"></script>
+<script type="text/javascript" src="/akalin/Public/lib/Validform/5.3.2/passwordStrength-min.js"></script>
+<script type="text/javascript" src="/akalin/Public/static/h-ui/js/H-ui.js"></script>
 <script>
     var navigation = responsiveNav("Hui-navbar", {customToggle: ".nav-toggle"});
 
