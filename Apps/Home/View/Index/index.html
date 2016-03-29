@@ -4,124 +4,146 @@
     <meta charset="utf-8">
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="__ROOT__/Public/lib/html5.js"></script>
     <script type="text/javascript" src="__ROOT__/Public/lib/respond.min.js"></script>
     <script type="text/javascript" src="__ROOT__/Public/lib/PIE_IE678.js"></script>
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui/css/H-ui.min.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/lib/Hui-iconfont/1.0.7/iconfont.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/lib/icheck/icheck.css" />
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui/css/H-ui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/lib/Hui-iconfont/1.0.7/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/lib/icheck/icheck.css"/>
     <!--<link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui/skin/default/skin.css" id="skin" />-->
 
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui/css/style.css"/>
     <!--[if IE 6]>
-    <script type="text/javascript" src="__ROOT__/Public/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+    <script type="text/javascript" src="__ROOT__/Public/lib/DD_belatedPNG_0.0.8a-min.js"></script>
     <script>DD_belatedPNG.fix('*');</script>
     <![endif]-->
 
     <title>阿卡林-星哥的博客</title>
     <meta name="keywords" content="PHP,Apache,Nginx,MySql,Redis">
     <meta name="description" content="专注PHP技术分享">
+    <style type="text/css">
+        html { overflow-y: auto }
+        #Hui-nav li#Huinav_1 a, #Hui-nav li#Huinav_1 a:hover
+        {
+            color: #fff;
+            background-color: #111
+        }
+        .nav-toggle { display: none!important }
+        .index-log-list .item{ height:140px}
+        @media (max-width: 767px) {
+            .f-14 { font-size: 16px }
+            .index-log-list .item{ height:auto}
+        }
+
+    </style>
 </head>
 <body>
-<div id="header">
 <header class="navbar-wrapper">
-    <div class="navbar navbar-black navbar-fixed-top">
-        <div class="container cl">
-            <a class="logo navbar-logo hidden-xs" href="/aboutHui.shtml">阿卡林-星哥的博客</a>
-            <a class="logo navbar-logo-m visible-xs" href="/aboutHui.shtml">H-ui</a>
-            <span class="logo navbar-slogan hidden-xs">专注 &middot; 分享 &middot; PHP技术</span>
-            <a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:;">&#xe667;</a>
-            <nav class="nav navbar-nav nav-collapse" role="navigation" id="Hui-navbar">
-                <ul class="cl">
-                    <li class="current"><a href="/">首页</a></li>
-                    <li class="dropDown dropDown_hover"><a href="#" class="dropDown_A">PHP技术<i class="Hui-iconfont">&#xe6d5;</i></a>
-                        <ul class="dropDown-menu menu radius box-shadow">
-                            <li><a href="#">类库推荐</a></li>
-                            <li><a href="#">技巧拾遗</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropDown dropDown_hover"><a href="#" class="dropDown_A">前端技术<i class="Hui-iconfont">&#xe6d5;</i></a>
-                        <ul class="dropDown-menu menu radius box-shadow">
-                            <li><a href="#">HTML5</a></li>
-                            <li><a href="#">JavaScript</a></li>
-                            <li><a href="#">CSS</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropDown dropDown_hover"><a href="#" class="dropDown_A">后端技术<i class="Hui-iconfont">&#xe6d5;</i></a>
-                        <ul class="dropDown-menu menu radius box-shadow">
-                            <li><a href="#">PHP</a></li>
-                            <li><a href="#">Nginx</a></li>
-                            <li><a href="#">Apache</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropDown dropDown_hover"><a href="#" class="dropDown_A">数据技术<i class="Hui-iconfont">&#xe6d5;</i></a>
-                        <ul class="dropDown-menu menu radius box-shadow">
-                            <li><a href="#">MySql</a></li>
-                            <li><a href="#">Redis</i></a></li>
-                            <li><a href="#">MongoDB</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">随笔</a></li>
-                    <li><a href="#">关于我</a></li>
+    <div class="navbar navbar-black">
+        <div class="container-fluid cl"> <a class="logo navbar-logo hidden-xs" href="/aboutHui.shtml">H-ui前端框架</a> <a class="logo navbar-logo-m visible-xs" href="/aboutHui.shtml">H-ui</a> <span class="logo navbar-slogan hidden-xs">简单 &middot; 免费 &middot; 适合中国网站</span> <a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:;">&#xe667;</a>
+            <nav id="Hui-nav" class="nav navbar-nav">
+                <ul class="c1">
+                       <volist name="list" id="vo">
+                           <li class="dropDown dropDown_hover"><a href="#" class="dropDown_A">{$vo.name}<i class="Hui-iconfont">
+                               &#xe6d5;</i></a>
+                               <ul class="dropDown-menu menu radius box-shadow">
+                                   <volist name="lists" id="v">
+                                       <if condition="$v.pid eq $vo.id "><li><a href="#">{$v.name}</a></li></if>
+                                   </volist>
+                               </ul>
+                           </li>
+                       </volist>
                 </ul>
             </nav>
-
-            <nav class="navbar-userbar hidden-xs"></nav>
+            <!--<nav class="navbar-userbar f-r hidden-xs hidden-sm">-->
+                <!--<a href="javascript:void(0);" onclick="addFavoritepage();return !1;" class="btn btn-primary radius" title="收藏">收藏本页</a>-->
+                <!--<a class="btn btn-success radius" target="_blank" href="/shareCode.shtml">代码分享</a>-->
+                <!--<a title="点击查看捐赠列表" class="btn btn-success radius juanzeng" target="_blank" href="juanzeng.shtml">捐赠<span style="color:#333" class="bk-gray box-shadow text-c f-14 pb-10 bg-fff"><img width="200" src="http://static.h-ui.net/www/images/alipay.png"> <br>支付宝扫码</span></a>-->
+            <!--</nav>-->
         </div>
     </div>
 </header>
+    <nav class="breadcrumb">
+        <div class="container">
+            <i class="Hui-iconfont">&#xe67f;</i> <a href="/" class="c-primary">首页</a><span class="c-gray en">&gt;</span><a
+                href="#">组件</a><span class="c-gray en">&gt;</span><span class="c-gray">当前页面</span>
+        </div>
+    </nav>
 </div>
-<nav class="breadcrumb">
-    <div class="container">
-        <i class="Hui-iconfont">&#xe67f;</i> <a href="/" class="c-primary">首页</a><span class="c-gray en">&gt;</span><a href="#">组件</a><span class="c-gray en">&gt;</span><span class="c-gray">当前页面</span>
-    </div>
-</nav>
-<div id="container" style="width: 80%; height: 300px;">
 
+<!--[if lte IE 9 ]>
+<div class="Huialert Huialert-danger"><i class="Hui-iconfont">&#xe6a6;</i>哥，您还在用低版本的IE浏览器，<a href="/soft/browser.shtml" target="_blank">还不速速换一个</a>！</div>
+<![endif]-->
+<article class="index-banner">
+    <div class="container">
+        <p class="f-20 pt-16 pb-16">阿卡林-星哥的博客是基于ThinkPHP与H-ui前端框架开发的个人博客<br></p>
+        <p class="f-16 pt-14">官方QQ群：<span>216613108</span></p>
+    </div>
+</article>
+<section class="container">
+    <article class="f-14 l-30 mt-20">
+        <p>致亲爱的用户：</p>
+        <p style="text-indent: 2em">阿卡林-星哥的博客，专注于PHP技术的开发与分享。</p>
+        <p style="text-indent: 2em">优秀的程序猿（媛）应该保持一颗对技术热忱的心。</p>
+        <p style="text-indent: 2em">生活中总是有些东西从别人口中说出来，自己都会觉得很容易，也就那么点东西，没什么值得骄傲，但其实知道一些东西不容易，讲给别人并使其听懂更不容易。</p>
+        <p style="text-indent: 2em">生活当中也有一些东西在你用到时候很精通，时间长了却恍如迎面而来的路人一样陌生，要从头开始了解。</p>
+        <p style="text-indent: 2em">生活中曾在各大门户、微博、博客逛来逛去，合上电脑，闭上眼睡觉什么都没留下，唯有总结才能有收获。</p>
+        <p style="text-indent: 2em">工作或学习当中，你是否会发现很多人再问同样的问题帖子，但没人回答，往下继续查看，通常都是以已经解决结束，却看不到具体解决办法。</p>
+        <p style="text-indent: 2em">这就是博客存在的原因，希望能记录、分享我们遇到的难题和我们认为比较精彩的内容(无论是技术类还是为人处事)，也希望能帮助一些人解决他们遇到的难题，同时提高自己的表达和总结能力。</p>
+        <p style="text-indent: 2em">博客坚持分享、开放的互联网精神，旨在为广大互联网攻城师提供交流的平台，如果你和我们有相同的目标，我们乐意一起携手前行。</p>
+        <p style="text-indent: 2em">欢迎有技术、有经验、有问题、有态度、有故事的你前来分享！</p>
+        <p style="text-indent:2em">最后，感谢Thinkphp与H-ui前端框架的开发者们付出的艰辛努力！！！</p>
+        <p class="text-r">——星哥</p>
+    </article>
+</section>
+
+<div id="footer">
+    <footer class="footer mt-20">
+        <section class="flink-text">
+            <h4>友情链接</h4>
+            <a id="tongji_mycodes" href="http://www.mycodes.net/154/8226.htm" target="_blank" title="源码之家">源码之家</a> <a id="tongji_juheweb" href="http://www.juheweb.com/zy/xg/40.html" target="_blank" title="聚合分享素材网">聚合分享素材网</a> <a id="tongji_oschina" href="http://www.oschina.net/p/h-ui" target="_blank" title="开源中国">开源中国</a> <a id="tongji_openwbs" href="http://www.openwbs.com/" target="_blank" title="OpenWBS商城系统">OpenWBS商城系统</a> <a id="tongji_js-css" href="http://www.js-css.cn/a/openframe/cssframe/2014/0702/1237.html" target="_blank" title="JS代码网">JS代码网</a> <a id="tongji_html580" href="http://www.html580.com/11656/" target="_blank" title="HTML 580">HTML 580</a> <a id="tongji_daimajiayuan" href="http://www.daimajiayuan.com/" target="_blank" title="代码家园">代码家园</a> <a id="tongji_xinyicms" href="http://www.xinyicms.com/" target="_blank" title="xinyiCMS">新亿CMS</a> <a id="tongji_webgee" href="http://www.webgee.com/" target="_blank" title="网络资源分享平台">网极资源分享</a> <a id="tongji_itput" href="http://www.itput.cn/" target="_blank" title="">IT葡萄</a>
+            <!--<a id="tongji_hellorf" href="http://www.hellorf.com/referral/uid942910" target="_blank" title="正版图片|正版微利素材库，正版图片交易平台" rel="nofollow">海洛创意（HelloRF）</a> <a id="tongji_zcooljob" href="http://job.zcool.com.cn/" target="_blank" title="设计师招聘平台" rel="nofollow">站酷招聘</a> <a id="tongji_gogoup" href="http://www.gogoup.com/" target="_blank" title="设计师教育平台" rel="nofollow">站酷高高手</a>-->
+            <!--<a id="tongji_cndzcmjd" href="http://www.cndzcmjd.com/" target="_blank" title="中国代庄草莓基地">中国代庄草莓基地</a>-->
+        </section>
+        <div class="container">
+            <nav class="footer-nav">
+                <a target="_self" href="__ROOT__">阿卡林-星哥的博客</a>
+                <!--<span class="pipe">|</span>-->
+                <!--<a target="_blank" href="/copyright.shtml">软件著作权</a>-->
+                <!--<span class="pipe">|</span>-->
+                <!--<a target="_blank" href="/juanzeng.shtml">感谢捐赠</a>-->
+            </nav>
+            <p> Copyright &copy;2012-2016 <a rel="nofollow" target="_blank" href="http://weibo.com/xinghu520"> 上郡星哥
+                (mike hu) </a>All Rights Reserved.<br>
+                <a rel="nofollow" target="_blank" href="http://www.miitbeian.gov.cn/">赣ICP15008163号</a><br>
+            </p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="__ROOT__/Public/lib/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="__ROOT__/Public/lib/layer/2.1/layer.js"></script>
+    <script type="text/javascript" src="__ROOT__/Public/lib/laypage/1.2/laypage.js"></script>
+    <script type="text/javascript" src="__ROOT__/Public/lib/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="__ROOT__/Public/lib/icheck/jquery.icheck.min.js"></script>
+    <script type="text/javascript" src="__ROOT__/Public/lib/bootstrap-Switch/bootstrapSwitch.js"></script>
+    <script type="text/javascript" src="__ROOT__/Public/lib/Validform/5.3.2/Validform.min.js"></script>
+    <script type="text/javascript" src="__ROOT__/Public/lib/Validform/5.3.2/passwordStrength-min.js"></script>
+    <script type="text/javascript" src="__ROOT__/Public/static/h-ui/js/H-ui.js"></script>
 </div>
-<footer class="footer mt-20">
-    <div class="container">
-        <nav class="footer-nav">
-            <a target="_blank" href="/aboutHui.shtml">阿卡林-星哥的博客</a>
-            <span class="pipe">|</span>
-            <a target="_blank" href="/copyright.shtml">软件著作权</a>
-            <span class="pipe">|</span>
-            <a target="_blank" href="/juanzeng.shtml">感谢捐赠</a>
-        </nav>
-        <p>Copyright &copy;2013-2016 H-ui.net All Rights Reserved. <br>
-            <a rel="nofollow" target="_blank" href="http://www.miitbeian.gov.cn/">京ICP备15015336号-1</a><br>
-            未经允许，禁止转载、抄袭、镜像<br>
-            用心做站，做不一样的站</p>
-    </div>
-</footer>
-
-<script type="text/javascript" src="__ROOT__/Public/lib/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="__ROOT__/Public/lib/layer/2.1/layer.js"></script>
-<script type="text/javascript" src="__ROOT__/Public/lib/laypage/1.2/laypage.js"></script>
-<script type="text/javascript" src="__ROOT__/Public/lib/My97DatePicker/WdatePicker.js"></script>
-<script type="text/javascript" src="__ROOT__/Public/lib/icheck/jquery.icheck.min.js"></script>
-<script type="text/javascript" src="__ROOT__/Public/lib/bootstrap-Switch/bootstrapSwitch.js"></script>
-<script type="text/javascript" src="__ROOT__/Public/lib/Validform/5.3.2/Validform.min.js"></script>
-<script type="text/javascript" src="__ROOT__/Public/lib/Validform/5.3.2/passwordStrength-min.js"></script>
-<script type="text/javascript" src="__ROOT__/Public/static/h-ui/js/H-ui.js"></script>
 <script>
-    var navigation = responsiveNav("Hui-navbar", {customToggle: ".nav-toggle"});
-
-    $(function(){
-        $('.skin-minimal input').iCheck({
-            checkboxClass: 'icheckbox-blue',
-            radioClass: 'iradio-blue',
-            increaseArea: '20%'
-        });
-        $("#demoform").Validform({
-            tiptype:2
-        });
-    });
+    /*添加收藏*/
+    function addFavoritepage(name,site){
+        try{window.external.addFavorite(site,name);}
+        catch(e){
+            try{window.sidebar.addPanel(name,site,"");}
+            catch(e){alert("加入收藏失败，请使用Ctrl+D进行添加");}
+        }
+    }
 </script>
 </body>
 </html>
-<!--H-ui前端框架提供前端技术支持 h-ui.net @2015-8-4 -->

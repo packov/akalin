@@ -6,8 +6,6 @@ return array(
     //模块配置
     'DEFAULT_MODULE'  => 'Home',
     'URL_CASE_INSENSITIVE' => true,//url不区分大小写
-    'TAGLIB_BEGIN'=>'{',
-    'TAGLIB_END'=>'}',
     // URL伪静态后缀设置
     'URL_HTML_SUFFIX'   => '',
 
